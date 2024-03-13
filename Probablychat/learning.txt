@@ -1,0 +1,18 @@
+yo sup:Sup
+ hi:Hello!
+ hi:Hello!
+Hi:Hello!
+Hi:Hello!
+Hi:Hello!
+Hi:Hello!
+Sup bro:Hi
+Sup bro:Hi
+Sup:Hi
+hi:hi
+ Hello:Hi!
+ Hi:Yo!
+ yo:hi
+yo:hi
+How are you?:Good!
+Noice:Yup
+So how are you?:Good

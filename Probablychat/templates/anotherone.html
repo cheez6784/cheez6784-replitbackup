@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <title>True AI Chat</title>
+  <head>
+    <meta name="google-site-verification" content="hzxYpIXT737zhapTnxqDieul04AQyXCHNdJkzm2ULaM" />
+  </head>
+  <link rel="icon" href="https://freeiconshop.com/wp-content/uploads/edd/chat-outline.png" type="image/x-icon">
+  <style>
+    body {
+      background-color: lightskyblue;
+      text-align: center;
+      font-family: "Trebuchet MS";
+    }
+    .response {
+      border-radius: 10px; 
+      border-width: 0px; 
+      background-color: lightcyan; 
+      font-family: "Trebuchet MS";
+      padding: 20px; 
+      padding-top: 10px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    @keyframes small {
+      from {border-width: 5px;}
+      to {border-width: 2px;}
+    } 
+    @keyframes big {
+      from {border-width: 2px;}
+      to {border-width: 5px;}
+    } 
+    .send {
+      animation: small 0.4s;
+      border-width: 2px;
+      border-radius: 7px;
+      background-color: lightblue; 
+      padding: 5px;
+      margin: 20px;
+      font-family: "Trebuchet MS";
+    }
+    .send:hover {
+      animation: big 0.4s;
+      border-width: 5px;
+      background-color: royalblue;
+      cursor: pointer;
+    }
+    .cookies {
+      font-size: 12px;
+      background-color: floralwhite;
+      width: 555px;
+      text-align: center;
+      border-radius: 17px;
+      height: 20px;
+      align-content: center;
+      align-items: center;
+      align-self: center;
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      display: {{cookies}};
+    }
+    .ok {
+      background-color: #7affe9;
+      border-radius: 8px; 
+      border-width: 0px;
+      font-size: 11px; 
+      margin-left: 20px;
+    }
+    .ok:hover {
+      background-color: #4dd1bb;
+    }
+
+    
+  </style>
+  <body>
+    <form method="post">
+      <h2 style="cursor: normal;">{{botresp}}</h2>
+      <!-- <h4 style="cursor: normal;">Emotion Rating: {{rating}}</h4> -->
+      <input type="text" name="response" autocomplete="off" class="response" placeholder="Type Response Here"  title="What Do You Want To Say?" required>
+      <input type="submit" value="Send" class="send" title="Send Your Response (Enter)">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </form>
+    <script>
+      function hideCookies() {
+        var cookiesDiv = document.querySelector('.cookies');
+        cookiesDiv.style.display = 'none';
+      }
+    </script>
+    <p style="font-size: 7px;">Bot may respond with something unrelated, but it will try to match the emotion.</p>
+    <p style="font-size: 7px;">By using this bot, you agree to the <a href="/terms">terms</a>, and <a href="/privacy">privacy policy</a>.</p>
+    <!---- <div class="cookies">This site uses cookies to track your emotion and the bot's name. <button onclick="hideCookies()" class="ok">Okay</button></div> ----->
+    <br>
+    <br>
+    <!-- <a href="{{link}}"><button class="ok" title="Toggle Answer Learning">{{linktext}}</button></a> -->
+    
+  </body>
+</html>

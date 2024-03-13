@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <title>You're In Trouble</title>
+  <link rel="icon" href="https://freeiconshop.com/wp-content/uploads/edd/chat-outline.png" type="image/x-icon">
+  <style>
+    body {
+      background-color: red;
+      text-align: center;
+      font-family: "Trebuchet MS";
+      font-color: green;
+    }
+  </style>
+      <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+     
+      <script>
+     
+                
+    $.getJSON("https://api.ipify.org?format=json", function(data) {
+         
+        
+        $("#ip").html(data.ip);
+    })
+    </script>
+  <body>
+    <h1>No you dont.</h1>
+    <h1 id="ip"></h1>
+  </body>
+</html>
